@@ -12,42 +12,65 @@
   margin-right: auto;
   width: 40%;
 }
-body {background-color: coral;}
+body {
+  background-color: coral;
+  font-family: 'Roboto', sans-serif;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 12px 15px;
+}
+.tabella{
+  border-radius: 10%;
+  border-collapse: separate;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
   </style>
 </head>
 <body>
   <img src="/images/galeandro.gif" alt="index" class="center">
-  <table>
+  <table class="tabella">
     <thead>
       <tr>
-        <th style="text-align: left;">Nome esercizio</th>
+        <th style="text-align: left;">Esercizi teoria</th>
         <th>Links</th>
       </tr>
     </thead>
-    <tbody>
+    <tr>
       <td>Esercizio Un perfetto viaggio con le immagini</td>
       <td><a href="Esercizio1\docs\Index.html">vai!</a></td>
-    </tbody>
-    <tbody>
+    </tr>
+    <tr>
       <td>Esercizio Saltare Intorno</td>
       <td><a href="Esercizio2\docs\index.html">vai!</a></td>
-    </tbody>
-    <tbody>
+    </tr>
+    <tr>
       <td>Esercizio Libro Di Ricette</td>
       <td><a href="Esercizio3\docs\Index.html">vai!</a></td>
-    </tbody>
-    <tbody>
+    </tr>
+    <tr>
       <td>Esercizio Pagina web sui viaggi</td>
       <td><a href="">vai!</a></td>
-    </tbody>
-    <tbody>
+    </tr>
+    <tr>
       <td>Esercizio blog</td>
       <td><a href="">vai!</a></td>
-    </tbody>
-    <tbody>
+    </tr>
+  </table>
+<br>  <br>
+
+  <table class="tabella">
+    <thead>
+      <tr>
+        <th style="text-align: left;">Esercizi pratica</th>
+        <th>Links</th>
+      </tr>
+    </thead>
       <td>Esercizio influencer</td>
-      <td><a href="">vai!</a></td>
-    </tbody>
+      <td><a href="Influencer/docs/index.html">vai!</a></td>
+    </tr>
   </table>
 </body>
 </html>
