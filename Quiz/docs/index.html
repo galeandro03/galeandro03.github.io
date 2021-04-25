@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz con javascript</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <form action="">
+        <h4>Dati anagrafici</h4>
+        <label for="cognome">Cognome: </label>
+        <input type="text" name="cognome" id="cognome">
+        <br>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <br>
+        <h4>Data di nascita</h4>
+        <label for="giorno">Giorno: </label>
+        <input type="text" name="giorno" id="giorno">
+        <label for="mese">Mese: </label>
+        <select name="mese" id="mese">
+            <option value="GEN">Gennaio</option>
+            <option value="FEB">Febbraio</option>
+            <option value="MAR">Marzo</option>
+            <option value="APR">Aprile</option>
+            <option value="MAG">Maggio</option>
+            <option value="GIU">Giugno</option>
+            <option value="LUG">Luglio</option>
+            <option value="AGO">Agosto</option>
+            <option value="SET">Settembre</option>
+            <option value="OTT">Ottobre</option>
+            <option value="NOV">Novembre</option>
+            <option value="DIC">Dicembre</option>
+        </select>
+        <label for="anno">Anno:</label>
+        <input type="text" name="anno" id="anno">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Domande</legend>
+            <label for="domanda1">
+                Qual è il linguaggio di programmazione 
+                utilizzato per creare e modificare i database? 
+                (in maiuscolo)
+            </label>
+            <br>
+            <input type="text" name="domanda1" id="d1">
+            <hr>
+            <label for="domanda2">
+                Quanti valori può assumere una variabile booleana?
+            </label>
+            <br>
+            <select name="domanda2" id="d2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="256">256</option>
+            </select>
+            <hr>
+            <label for="domanda3">Quali sono le librerie
+                caricate a run-time?
+            </label>
+            <br>
+            <input type="radio" name="domanda3" id="r1">Statiche
+            <br>
+            <input type="radio" name="domanda3" id="r2">Dinamiche
+            <hr>
+            <label for="domanda4">
+                Quali tra queste sono parole chiave in C++?
+            </label>
+            <br>
+            <input type="checkbox" id="check1" name="check" value="void">void
+            <br>
+            <input type="checkbox" id="check2" name="check" value="integer">integer
+            <br>
+            <input type="checkbox" id="check3" name="check" value="char">char
+            <hr>
+            <label for="domanda5">8 bit corrispondo a un...</label>
+            <br>
+            <input type="text" name="domanda5" id="domanda5">
+        </fieldset>
+        <br>
+        <button type="button" onclick="elabora()">Elabora</button>
+        <input type="reset" value="Cancella">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Esito</legend>
+            <label for="punteggio">Punteggio: </label>
+            <input type="text" name="punteggio" id="punteggio">
+        </fieldset>
+        <br>
+        <br>
+        <button type="button" onclick="visualizzaCodice()">Utente con punteggio</button>
+        <input type="text" name="utentepunteggio" id="up">
+    </form>
+    <script src="../js/script.js"></script>
+</body>
+</html>
